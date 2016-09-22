@@ -1,0 +1,8 @@
+{
+  "name": "xanite-build",
+  "version": "0.1.0",
+  "description": "A modular digital audio workstation.",
+  "author": "Connor Hartley <vectrixu+gh@gmail.com>",
+  "license": "GPL-3.0",
+  "private": true
+}
