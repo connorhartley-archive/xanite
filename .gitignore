@@ -13,6 +13,8 @@ git rm --cached <file>
 *.exe
 *.o
 *.so
+build/app/*.js
+build/app/*.d.ts
 
 # Packages #
 ############
