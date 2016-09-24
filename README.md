@@ -1,5 +1,5 @@
 # Xanite
-[![Dev Dependency Status](https://david-dm.org/xanite/xanite/dev-status.svg)](https://david-dm.org/xanite/xanite?type=dev)
+[![Dependency Status](https://david-dm.org/xanite/xanite/status.svg?path=build/app)](https://david-dm.org/xanite/xanite?path=build/app) [![Dev Dependency Status](https://david-dm.org/xanite/xanite/dev-status.svg)](https://david-dm.org/xanite/xanite?type=dev)
 
 > A modular digital audio workstation.
 
