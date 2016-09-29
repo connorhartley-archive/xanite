@@ -2,7 +2,7 @@
   "name": "xanite-build",
   "dependencies": {},
   "globalDependencies": {
-    "node": "registry:dt/node#6.0.0+20160921192128"
+    "node": "registry:dt/node#6.0.0+20160928143418"
   },
   "globalDevDependencies": {
     "gulp": "registry:dt/gulp#3.8.0+20160907112908"

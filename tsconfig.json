@@ -2,12 +2,11 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "es6",
+        "outDir": "build/app",
+        "baseUrl": "src",
         "noImplicitAny": false,
         "sourceMap": true
     },
-    "include": [
-      "src/**/*"
-    ],
     "exclude": [
         "node_modules",
         "gulpfile.ts"
