@@ -1,0 +1,24 @@
+language: node_js
+notifications:
+  email:
+    on_success: never
+    on_failure: change
+node_js:
+  - '6'
+addons:
+  apt:
+    packages:
+      - libgnome-keyring-dev
+      - g++-4.8
+    sources:
+      - ubuntu-toolchain-r-test
+env:
+  - CXX=g++-4.8
+install:
+  - npm install -g npm
+  - npm install -g node-gyp
+  - npm install -g typings
+  - typings install
+  - npm install
+script: npm run compile
+# after_success: npm run converalls
