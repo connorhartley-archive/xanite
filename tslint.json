@@ -1,9 +1,9 @@
 {
     "extends": "tslint-config-xo/esnext",
     "rules": {
-        "indent": [
-            true,
-            "spaces"
-        ],
+      "indent": [
+        true,
+        "spaces"
+      ]
     }
 }

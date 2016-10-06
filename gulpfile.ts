@@ -1,34 +1,34 @@
-"use strict";
+'use strict';
 
-import gulp = require("gulp");
-import os = require("os");
-import typescript = require("gulp-typescript");
-import builder = require("electron-builder");
+import gulp = require('gulp')
+import os = require('os')
+import typescript = require('gulp-typescript')
+import builder = require('electron-builder')
 
-const Platform = builder.Platform;
+const platform = builder.Platform
 
-const project = typescript.createProject("tsconfig.json");
+const project = typescript.createProject('tsconfig.json')
 
-gulp.task("compile:typescript", () => {
-  let result = project.src()
-        .pipe(typescript(project));
-  return result.js.pipe(gulp.dest("build/app/local"));
-});
+gulp.task('compile:typescript', () => {
+  const result = project.src()
+        .pipe(project());
+  return result.js.pipe(gulp.dest('build/app/local'))
+})
 
-gulp.task("build:electron", () => {
-  if (os.platform() === "darwin") {
+gulp.task('build:electron', () => {
+  if (os.platform() === 'darwin') {
     builder.build({
-      targets: Platform.MAC.createTarget()
-    });
-  } else if (os.platform() === "linux") {
+      targets: platform.MAC.createTarget()
+    })
+  } else if (os.platform() === 'linux') {
     builder.build({
-      targets: Platform.LINUX.createTarget()
-    });
-  } else if (os.platform() === "win32") {
+      targets: platform.LINUX.createTarget()
+    })
+  } else if (os.platform() === 'win32') {
     builder.build({
-      targets: Platform.WINDOWS.createTarget()
-    });
+      targets: platform.WINDOWS.createTarget()
+    })
   } else {
-    console.log("Xanite could not be built on " + os.platform() + ".");
+    console.log('Xanite could not be built on ' + os.platform() + '.')
   }
-});
+})
