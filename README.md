@@ -6,10 +6,6 @@
 
 This README along with the project is a work in progress.
 
-#### Dependency Status
-
-[![Dependency Status](https://david-dm.org/xanite/xanite/status.svg?path=build/app)](https://david-dm.org/xanite/xanite?path=build/app) [![Dev Dependency Status](https://david-dm.org/xanite/xanite/dev-status.svg)](https://david-dm.org/xanite/xanite?type=dev)
-
 ## Credits
 
 | ![connor][connor-avatar] |
